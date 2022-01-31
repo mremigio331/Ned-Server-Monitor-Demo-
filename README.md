@@ -4,6 +4,7 @@
 ![Output](Images/Ned_Network_Monitor.png)
 
 This is a demo with sample data. to get the full code go to https://github.com/mremigio331/Ned-Server-Monitor
+Go to https://share.streamlit.io/mremigio331/ned-server-monitor-demo-/ned.py for an interactive demo.
 
 Ned is a server monitoring code that allows you to see what IPs have successfully and unsuccessfully connected to your servers. Ned uses Streamlit for it's GUI. 
 
