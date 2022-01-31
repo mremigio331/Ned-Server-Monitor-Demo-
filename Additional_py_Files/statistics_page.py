@@ -428,10 +428,12 @@ def servers_hit():
 			min_date_time = datetime(int(year), int(month), int(date))
 
 			with layout[0]:
-				start_date = st.date_input('Start Date:', max_value=datetime.today())  # omit "sidebar"
+				start_date = st.date_input('Start Date:', value=datetime(2021, 12, 31),
+										   max_value=datetime(2021, 12, 31))  # omit "sidebar"
+
 			with layout[0]:
-				end_date = st.date_input('End Date:', value=(d), min_value=min_date_time,
-										 max_value=datetime.today())  # omit "sidebar"
+				end_date = st.date_input('End Date:', value=(datetime(2021, 12, 26)), min_value=datetime(2021, 12, 1),
+										 max_value=datetime(2021, 12, 31))  # omit "sidebar"
 
 			new_start = str(start_date).replace('-', '/')
 			new_end = str(end_date).replace('-', '/')
